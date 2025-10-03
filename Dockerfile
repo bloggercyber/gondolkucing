@@ -4,7 +4,8 @@ FROM python:3.10-slim
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
-
+RUN apt -y update
+RUN apt install -y curl wget
 # Set work directory in container
 WORKDIR /app
 
