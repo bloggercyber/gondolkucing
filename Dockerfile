@@ -5,7 +5,7 @@ FROM python:3.10-slim
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 RUN apt -y update
-RUN apt install -y curl wget
+RUN apt install -y curl wget tar 
 # Set work directory in container
 WORKDIR /app
 
